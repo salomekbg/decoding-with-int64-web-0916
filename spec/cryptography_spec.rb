@@ -24,6 +24,6 @@ end
 
 describe '#student_change' do
   it 'find the characters that result in the value' do
-    expect(encode_int64("write answer here")).to eq(956446786872726)
+    expect(encode_int64("trellises")).to eq(956446786872726)
   end
 end
