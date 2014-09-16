@@ -3,7 +3,7 @@ tags: todo, cs, comp sci, computer science, reverse engineering
 languages: ruby
 resources: 2
 ---
-# Cryptography with Int64 
+# Decoding with Int64 
 
 ## Objectives
 
