@@ -7,7 +7,7 @@ resources: 2
 
 ## Objectives
 
-* Complete the method `encode_int64` in the `lib/cryptography.rb` file such that it passes the specs. It should be a Ruby version of the [statically-typed](http://stackoverflow.com/a/1517670/2890716) pseudo-code below:
+* Complete the method `encode_int64` in the `lib/encode_decode.rb` file such that it passes the specs. It should be a Ruby version of the [statically-typed](http://stackoverflow.com/a/1517670/2890716) pseudo-code below:
 ```
 Int64 hash (String s) {
   Int64 h = 7
