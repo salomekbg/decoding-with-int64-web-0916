@@ -6,6 +6,14 @@ describe '#encode_int64' do
     expect(encode_int64("a")).to eq(259)
   end
 
+  it "converts 'c' to 260" do
+    expect(encode_int64("a")).to eq(260)
+  end
+
+  it "converts 'ad' to 9585" do
+    expect(encode_int64("ad")).to eq(9585)
+  end
+
   it "converts 'leepadg' to 680131659347" do
     expect(encode_int64("leepadg")).to eq(680131659347)
   end
@@ -14,9 +22,10 @@ describe '#encode_int64' do
     expect(encode_int64("degilmnrs")).to eq(917052554341109)
   end
 
-  it 'returns message for strings that include invalid characters' do
-    expect(encode_int64("x")).to eq("The word should only contain letters in acdegilmnoprstuw")
-    expect(encode_int64("degilmnrx")).to eq("The word should only contain letters in acdegilmnoprstuw")
+  it 'returns message when passed strings with invalid characters' do
+    ["x", "degilmnrx"].each do |invalid|
+      expect(encode_int64(invalid)).to eq("The word should only contain letters in acdegilmnoprstuw")
+    end
   end
 
 end
@@ -25,6 +34,14 @@ describe '#decode_int64' do
 
   it "converts 259 to 'a'" do
     expect(decode_int64(259)).to eq("a")
+  end
+
+  it "converts 260 to 'c'" do
+    expect(decode_int64(260)).to eq("c")
+  end
+
+  it "converts 9585 to 'ad'" do
+    expect(encode_int64(9585)).to eq("ad")
   end
 
   it "converts 680131659347 to 'leepadg'" do
