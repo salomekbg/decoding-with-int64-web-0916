@@ -28,4 +28,4 @@ Int64 hash (String s) {
 * [Stack Overflow](http://stackoverflow.com) - [What is the difference between INT, INT16, INT32 and INT64?](http://stackoverflow.com/q/9696660/2890716)
 * [Stack Overflow](http://stackoverflow.com) - [Static Typing](http://stackoverflow.com/a/1517670/2890716)
 
-<a href='https://learn.co/lessons/decoding-with-int64' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/decoding-with-int64' title='Decoding with Int64'>Decoding with Int64</a> on Learn.co and start learning to code for free.</p>
